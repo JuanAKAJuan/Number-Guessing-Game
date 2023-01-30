@@ -3,4 +3,6 @@ project(Number_Guessing_Game)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Number_Guessing_Game main.cpp)
+set(Headers GuessingGame.h)
+
+add_executable(Number_Guessing_Game ${PROJECT_SOURCE_DIR}/ main.cpp GuessingGame.cpp)
