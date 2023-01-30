@@ -1,0 +1,3 @@
+C:/Users/juanc/CLionProjects/Number-Guessing-Game/cmake-build-debug/CMakeFiles/Number_Guessing_Game.dir
+C:/Users/juanc/CLionProjects/Number-Guessing-Game/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/juanc/CLionProjects/Number-Guessing-Game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
