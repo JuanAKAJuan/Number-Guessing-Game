@@ -11,6 +11,8 @@ class GuessingGame {
     private:
     char returnToMenu;
     int cpuGuess;
+    int playerScore = 0;
+    int cpuScore = 0;
     int menuChoice;
     int difficultyChoice;
     int randomNumber;

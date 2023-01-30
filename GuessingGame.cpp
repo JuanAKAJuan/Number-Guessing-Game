@@ -1,8 +1,7 @@
 #include "GuessingGame.h"
 
 void GuessingGame::GameMenu()
-{
-    GenerateRandomNumber();
+{    GenerateRandomNumber();
     do
     {
         cout << "******WELCOME TO CSC GAMES!******" << endl;
@@ -28,7 +27,10 @@ void GuessingGame::GameMenu()
 }
 void GuessingGame::Scoreboard()
 {
-
+    cout << "******SCOREBOARD******" << endl;
+    cout << "Your Score: " << playerScore << endl;
+    cout << "CPU Score: " << cpuScore << endl;
+    ReturnToMenu();
 }
 void GuessingGame::DifficultyMenu()
 {
@@ -81,6 +83,7 @@ void GuessingGame::EasyGame()
             else if (cpuGuess == randomNumber)
             {
                 cout << "....Correct! You Lost The Game :(" << endl;
+                cpuScore++;
                 ReturnToMenu();
                 break;
             }
@@ -102,6 +105,7 @@ void GuessingGame::EasyGame()
             else if (cpuGuess == randomNumber)
             {
                 cout << "....Correct! You Lost The Game :(" << endl;
+                cpuScore++;
                 ReturnToMenu();
                 break;
             }
@@ -111,6 +115,7 @@ void GuessingGame::EasyGame()
     if (numberGuessed == randomNumber)
     {
         cout << "You guessed the number and won!" << endl;
+        playerScore++;
         ReturnToMenu();
     }
 }
@@ -134,6 +139,7 @@ void GuessingGame::MediumGame()
             else if (cpuGuess == randomNumber)
             {
                 cout << "....Correct! You Lost The Game :(" << endl;
+                cpuScore++;
                 ReturnToMenu();
                 break;
             }
@@ -155,6 +161,7 @@ void GuessingGame::MediumGame()
             else if (cpuGuess == randomNumber)
             {
                 cout << "....Correct! You Lost The Game :(" << endl;
+                cpuScore++;
                 ReturnToMenu();
                 break;
             }
@@ -164,6 +171,7 @@ void GuessingGame::MediumGame()
     if (numberGuessed == randomNumber)
     {
         cout << "You guessed the number and won!" << endl;
+        playerScore++;
         ReturnToMenu();
     }
 }
@@ -187,6 +195,7 @@ void GuessingGame::HardGame()
             else if (cpuGuess == randomNumber)
             {
                 cout << "....Correct! You Lost The Game :(" << endl;
+                cpuScore++;
                 ReturnToMenu();
                 break;
             }
@@ -208,6 +217,7 @@ void GuessingGame::HardGame()
             else if (cpuGuess == randomNumber)
             {
                 cout << "....Correct! You Lost The Game :(" << endl;
+                cpuScore++;
                 ReturnToMenu();
                 break;
             }
@@ -217,6 +227,7 @@ void GuessingGame::HardGame()
     if (numberGuessed == randomNumber)
     {
         cout << "You guessed the number and won!" << endl;
+        playerScore++;
         ReturnToMenu();
     }
 }
