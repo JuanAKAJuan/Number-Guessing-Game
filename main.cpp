@@ -1,5 +1,4 @@
 // Juan Mireles
-// TODO: Setup the Scoreboard.
 
 #include <iostream>
 #include "GuessingGame.h"
