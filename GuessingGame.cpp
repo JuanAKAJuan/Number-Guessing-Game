@@ -25,6 +25,7 @@ void GuessingGame::GameMenu()
     }
     while (menuChoice != 1 && menuChoice != 2 && menuChoice != 3);
 }
+
 void GuessingGame::Scoreboard()
 {
     cout << "******SCOREBOARD******" << endl;
@@ -32,6 +33,7 @@ void GuessingGame::Scoreboard()
     cout << "CPU Score: " << cpuScore << endl;
     ReturnToMenu();
 }
+
 void GuessingGame::DifficultyMenu()
 {
     do
@@ -57,12 +59,14 @@ void GuessingGame::DifficultyMenu()
     }
     while (difficultyChoice != 1 && difficultyChoice != 2 && difficultyChoice != 3);
 }
+
 void GuessingGame::GenerateRandomNumber()
 {
     srand(time(NULL));
     randomNumber = 1+(rand() % 100);
     //cout << randomNumber << endl;
 }
+
 void GuessingGame::EasyGame()
 {
     cout << "Pick a number between 1-100: ";
@@ -119,6 +123,7 @@ void GuessingGame::EasyGame()
         ReturnToMenu();
     }
 }
+
 void GuessingGame::MediumGame()
 {
     cout << "Pick a number between 1-100: ";
@@ -175,6 +180,7 @@ void GuessingGame::MediumGame()
         ReturnToMenu();
     }
 }
+
 void GuessingGame::HardGame()
 {
     cout << "Pick a number between 1-100: ";
@@ -231,6 +237,7 @@ void GuessingGame::HardGame()
         ReturnToMenu();
     }
 }
+
 void GuessingGame::ReturnToMenu()
 {
     cout << "Would you like to return to the menu? Y/N" << endl;
