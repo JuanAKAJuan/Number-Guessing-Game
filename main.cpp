@@ -1,4 +1,6 @@
 // Juan Mireles
+// CSC 210
+// Number Guessing Game
 
 #include <iostream>
 #include "GuessingGame.h"
