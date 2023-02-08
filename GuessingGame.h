@@ -8,6 +8,16 @@
 using namespace std;
 
 class GuessingGame {
+    private:
+        char returnToMenu;
+        int cpuGuess;
+        int playerScore = 0;
+        int cpuScore = 0;
+        int menuChoice;
+        int difficultyChoice;
+        int randomNumber;
+        int numberGuessed;
+
     public:
         /* The player will be asked to select what menu they want to enter or if they want to quit.
          * @pre: NONE
@@ -49,16 +59,6 @@ class GuessingGame {
          * @post: A random number will be generated to guess.
          */
         void GenerateRandomNumber();
-
-    private:
-        char returnToMenu;
-        int cpuGuess;
-        int playerScore = 0;
-        int cpuScore = 0;
-        int menuChoice;
-        int difficultyChoice;
-        int randomNumber;
-        int numberGuessed;
 
 };
 
