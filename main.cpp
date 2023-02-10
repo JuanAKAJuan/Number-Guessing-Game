@@ -5,7 +5,8 @@
 #include <iostream>
 #include "GuessingGame.h"
 
-int main() {
+int main()
+{
     GuessingGame game;
 
     game.GameMenu();

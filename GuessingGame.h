@@ -7,7 +7,8 @@
 #include <cstdlib>
 using namespace std;
 
-class GuessingGame {
+class GuessingGame
+{
     private:
         char returnToMenu;
         int cpuGuess;
